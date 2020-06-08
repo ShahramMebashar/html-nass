@@ -1,0 +1,52 @@
+/* purgecss start ignore */
+@tailwind  base;
+@tailwind  components;
+/* purgecss end ignore */
+
+@tailwind  utilities;
+
+body {
+    background: #f5f5f5;
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: #222;
+}
+.page {
+    @apply pb-24;
+}
+button:focus, [z-index = '0']:focus {
+    @apply shadow-outline outline-none;
+}
+
+.text-muted {
+    @apply text-gray-500;
+}
+
+a {
+    @apply transition transition-colors ease-in-out duration-200;
+}
+
+.nav-link-active{
+    position: relative;
+}
+.nav-link-active::after {
+    content:  ' ';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 2px;
+    border-radius: 6px;
+    background: #00B5CE;
+}
+
+
+.error {
+    @apply text-red-600 text-xs;
+}
+
+.btn {
+    @apply inline-block select-none px-4 py-2;
+}
