@@ -1,12 +1,13 @@
 import Vue from 'vue'
 
-Vue.component('navbar', require('./components/Navbar').default);
+// Vue.component('navbar', require('./components/Navbar').default);
 
 let vm = new Vue({
     el: '#app',
     data() {
         return {
-            show: false
+            show: false,
+            mobileIsOpen: false
         };
     }
 })
